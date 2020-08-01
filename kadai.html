@@ -40,8 +40,7 @@
         var geometry = new THREE.BoxGeometry(400, 30, 500);
         var material = new THREE.MeshPhongMaterial({ color: 0x0000ff });
         var box = new THREE.Mesh(geometry, material);
-        const loader = new THREE.TextureLoader();
-        const texture = loader.load('wood.jpg');
+       
         scene.add(box);
         box.position.set( 0, 100,0);
 
@@ -62,6 +61,9 @@
           var cylinder2 = new THREE.Mesh( cylinderGeometry, cylinderMaterial );
           cylinder2.position.set( -300, 25, 0);
           scene.add( cylinder2 );
+
+          const loader = new THREE.TextureLoader();
+        const texture = loader.load('wood.jpg');
 
 
 
