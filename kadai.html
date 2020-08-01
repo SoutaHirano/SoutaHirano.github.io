@@ -29,6 +29,15 @@
         // カメラコントローラーを作成
         const controls = new THREE.OrbitControls(camera);
 
+        var textureLoader = new THREE.TextureLoader();
+  var texture = textureLoader.load("download.jpg");
+  var mat = new THREE.MeshPhongMaterial();
+  mat.map = texture;
+
+  var bump = textureLoader.load("download.jpg");
+  mat.bumpMap = bump;
+  mat.bumpscale = 0.2;
+
         // helper
         const gridHelper = new THREE.GridHelper(1000,20); // size, step
         scene.add(gridHelper);
