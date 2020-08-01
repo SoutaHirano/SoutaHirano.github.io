@@ -79,6 +79,9 @@
             // グループに追加する
             this.add(mesh);
           }
+          const earthMesh = new THREE.Mesh(geometry, material);
+        // シーンにメッシュを追加します
+        scene.add(earthMesh);
         }
       }
     </script>
