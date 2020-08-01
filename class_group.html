@@ -52,6 +52,10 @@
         constructor() {
           // 何かのクラスを継承した場合はsuper()を呼び出す必要がある
           super();
+          const material = new THREE.MeshStandardMaterial({
+          map: new THREE.TextureLoader().load('earthmap1k.jpg'),
+          side: THREE.DoubleSide
+        });
 
 
 
