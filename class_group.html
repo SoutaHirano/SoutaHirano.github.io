@@ -59,16 +59,7 @@
             const material = new THREE.MeshNormalMaterial();
             const geometry = new THREE.SphereGeometry(40, 30, 10);
             const mesh = new THREE.Mesh(geometry, material);
-            const loader = new THREE.TextureLoader();
-  const texture = loader.load('wood.jpg');
-  // マテリアルにテクスチャーを設定
-  const material = new THREE.MeshStandardMaterial({
-    map: texture
-  });
-  // メッシュを作成
-  const mesh = new THREE.Mesh(geometry, material);
-  // 3D空間にメッシュを追加
-  scene.add(mesh);
+
 
             // 配置座標を計算
             const radian = (i / length) * Math.PI * 2;
