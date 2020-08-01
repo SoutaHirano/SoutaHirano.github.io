@@ -52,12 +52,7 @@
         constructor() {
           // 何かのクラスを継承した場合はsuper()を呼び出す必要がある
           super();
-          const loader = new THREE.TextureLoader();
-          const texture = loader.load('kimetsu.jpg');
-  // マテリアルにテクスチャーを設定
-  const material = new THREE.MeshStandardMaterial({
-    map: texture
-  });
+
 
 
 
