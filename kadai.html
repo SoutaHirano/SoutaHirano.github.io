@@ -41,6 +41,7 @@
         var geometry = new THREE.BoxGeometry(400, 30, 500);
         var material = new THREE.MeshPhongMaterial({ color: 0x0000ff });
         var box = new THREE.Mesh(geometry, material);
+        var box = new THREE.Mesh(geometry, mat);
         scene.add(box);
         box.position.set( 0, 100,0);
 
