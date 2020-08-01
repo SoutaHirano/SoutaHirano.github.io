@@ -61,6 +61,12 @@
           cylinder2.position.set( -300, 25, 0);
           scene.add( cylinder2 );
 
+          const loader = new THREE.TextureLoader();
+  const texture = loader.load('wood.jpg');
+
+  const material = new THREE.MeshStandardMaterial({
+    map: texture
+  });
 
         // texture作成
         var textureLoader = new THREE.TextureLoader();
