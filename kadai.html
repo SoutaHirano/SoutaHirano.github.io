@@ -67,14 +67,8 @@
         // texture作成
         var textureLoader = new THREE.TextureLoader();
         var suntexture = textureLoader.load("wood.jpg");
+        var bump = textureLoader.load("wood.jpg");
 
-
-        
-        var mat = new THREE.MeshPhongMaterial();
-  mat.map = texture;
-  var bump = textureLoader.load("wood.jpg");
-        mat.bumpMap = bump;
-  mat.bumpscale = 0.2;
 
         // 平面（ポリゴン）を作成
         var sungeometry = new THREE.PlaneGeometry(200,200);
