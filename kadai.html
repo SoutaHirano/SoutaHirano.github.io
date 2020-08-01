@@ -29,7 +29,6 @@
         // カメラコントローラーを作成
         const controls = new THREE.OrbitControls(camera);
 
-
         // helper
         const gridHelper = new THREE.GridHelper(1000,20); // size, step
         scene.add(gridHelper);
@@ -41,7 +40,6 @@
         var geometry = new THREE.BoxGeometry(400, 30, 500);
         var material = new THREE.MeshPhongMaterial({ color: 0x0000ff });
         var box = new THREE.Mesh(geometry, material);
-       
         scene.add(box);
         box.position.set( 0, 100,0);
 
@@ -66,9 +64,8 @@
 
         // texture作成
         var textureLoader = new THREE.TextureLoader();
-        var suntexture = textureLoader.load("wood.jpg");
-        var  suntexture= textureLoader.load("wood.jpg");
-
+        var suntexture = textureLoader.load("img/sun.png");
+        var startexture = textureLoader.load("img/star.png");
 
         // 平面（ポリゴン）を作成
         var sungeometry = new THREE.PlaneGeometry(200,200);
